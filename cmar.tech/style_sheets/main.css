@@ -1,23 +1,221 @@
 /* CSS that will be applied to every page.*/
 
 body {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     /* background-color: #D9F1F1; */
-    width: 1055px;
+    width: 955px;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 40px;
 }
 
-#mainContent {
-    min-height: 500px;
+h1,
+h2,
+h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 100;
 }
 
-div {
+.infoDate {
+    font-style: italic;
+    color: darkgrey;
+}
+
+
+/* CSS DEBUGGING */
+
+
+/* div {
     border: 1px black solid;
+} */
+
+
+/* HEADER STYLE */
+
+#mainHeader {
+    padding: 4px;
+}
+
+#headerTitle {
+    font-size: 32pt;
+}
+
+#headerDescription {
+    width: 70%;
+    display: inline;
+}
+
+#header_social {
+    width: 150px;
+    float: right;
+}
+
+.socialLink>img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#navButtonsContainer {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.navigationButton {
+    border: 1px solid rgb(155, 155, 155);
+    min-width: 10%;
+    height: 25px;
+    font-size: 13pt;
+    border-radius: 4px;
+    margin-right: 13px;
+}
+
+
+/* CONTENT HEADER */
+
+#mainContent {
+    padding-top: 50px;
+    min-height: 500px;
 }
 
 h2.ContentHeader {
     font-weight: bold;
     font-size: 15pt;
 }
+
+
+/* FOOTER STYLE */
+
+#mainFooter {
+    margin-top: 30px;
+    padding: 4px;
+}
+
+
+/* DIFFERENT DISPLAY AREAS */
+
+
+/* HOME */
+
+
+/* ABOUT */
+
+.aboutJobTitle {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#aboutMeTable>tbody>tr>td {
+    padding: 12px;
+}
+
+#aboutMeTable>tbody>tr>.col2 {
+    width: 600px;
+}
+
+#aboutMeTable>tbody>tr>.col3 {
+    vertical-align: top;
+}
+
+#aboutMeTable>tbody>td>.projectLink {
+    width: 130px;
+}
+
+#aboutMeTable>tbody>tr>.col1 {
+    width: 140px;
+    text-align: right;
+    vertical-align: top;
+}
+
+#aboutMeTable>tbody>tr>td>.aboutSubTitle::after {
+    padding: 3px;
+    content: "";
+    display: inline-block;
+    margin-left: 0;
+    width: 1px;
+    margin-bottom: -12px;
+    height: 26px;
+    padding-top: 2px;
+    border-right: 1px solid rgb(155, 155, 155);
+}
+
+#aboutMeTable>tbody>tr>td>.infoDate::before {
+    padding: 3px;
+    content: "";
+    display: inline-block;
+    margin-left: 0 auto;
+    width: 1px;
+    margin-bottom: -12px;
+    height: 26px;
+    padding-top: 2px;
+    border-left: 1px solid rgb(155, 155, 155);
+}
+
+
+/* PROJECTS */
+
+#projectTable>tbody>tr>td {
+    padding: 6px;
+}
+
+#projectTable>tbody>tr>.col1 {
+    width: 120px;
+    /* vertical-align: top; */
+}
+
+#projectTable>tbody>tr>.col2 {
+    /* vertical-align: top; */
+    width: 440px;
+}
+
+#projectTable>tbody>tr>.col3 {
+    width: 80px;
+    /* vertical-align: top; */
+}
+
+#projectTable>tbody>td>.projectLink {
+    width: 130px;
+}
+
+#projectTable>tbody>tr>.col1 {
+    text-align: right;
+}
+
+#projectTable>tbody>tr>.col1::after {
+    padding: 3px;
+    content: "";
+    display: inline-block;
+    margin-left: 0 auto;
+    width: 1px;
+    margin-bottom: -12px;
+    height: 26px;
+    padding-top: 2px;
+    border-right: 1px solid rgb(155, 155, 155);
+}
+
+#projectTable>tbody>tr>td>.projectGitLink::before {
+    padding: 3px;
+    content: "";
+    display: inline-block;
+    margin-left: 0 auto;
+    width: 1px;
+    margin-bottom: -12px;
+    height: 26px;
+    padding-top: 2px;
+    border-left: 1px solid rgb(155, 155, 155);
+}
+
+
+/* RESUME */
+
+#resumePDFArea {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* TESTING */

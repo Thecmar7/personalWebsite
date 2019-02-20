@@ -20,23 +20,21 @@ class Display
 		?>
 	
 		<div id="mainHeader">
-			<div>
-				<h1 id="headerTitle"><?=$title?></h1>
-			</div>
+			
+			<h1 id="headerTitle"><?=$title?></h1>
+			
+			<p id="headerDescription"> 
+				<?=$description?>
+			</p>
 
 			<div id="header_social">
 				<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=<?=$config["paths"]["images"]["layout"]."/linkedin_pixel.png"?> alt="LinkedIn"></a>
 				<a class='socialLink' href=<?=$config['urls']['github']?>><img src=<?=$config["paths"]["images"]["layout"]."/github_pixel.png"?> alt="GitHub"></a>
 				<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=<?=$config["paths"]["images"]["layout"]."/twitter_pixel.png"?> alt="Twitter"></a>
 			</div>
+			
 
-			<div>
-				<p id="headerDescription"> 
-					<?=$description?>
-				</p>
-			</div>
-
-			<div>
+			<div id=navButtonsContainer>
 				<nav>
 					<button class='navigationButton' value=<?=$config['home']?>>Home</button>
 					<button class='navigationButton' value=<?=$config['bio']?>>About</button>
@@ -69,10 +67,7 @@ class Display
 			<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 				<title><?=$title?></title>
-				<!-- <link type="text/css" rel="stylesheet" href="//$config['paths']['stylesheets']."/header.css">" /> -->
-				<!-- <link type="text/css" rel="stylesheet" href="//$config['paths']['stylesheets']."/home.css">"/> -->
 				<link type="text/css" rel="stylesheet" href="<?=$config['paths']['stylesheets']."/main.css"?>"/>
-				<!-- <link type="text/css" rel="stylesheet" href="//$config['paths']['stylesheets']."/common.css">"/> -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 				<script src="<?=$config['paths']['javascript']."/home.js"?>"></script>
 			</head>
@@ -187,7 +182,7 @@ class Display
 				</div>
 
 				<div>
-					Last modified: <?=date ("F d Y H:i:s.", filemtime($filename))?>
+					Site Last Modified: <span class=infoDate> <?=date ("F d Y H:i:s.", filemtime($filename))?> </span>
 				</div>
 			</div>			
 		</body>
