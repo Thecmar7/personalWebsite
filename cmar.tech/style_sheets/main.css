@@ -79,13 +79,19 @@ h5 {
 /* CONTENT HEADER */
 
 #mainContent {
-    padding-top: 50px;
+    padding-top: 22px;
     min-height: 500px;
+}
+
+#mainContentContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
 }
 
 h2.ContentHeader {
     font-weight: bold;
-    font-size: 15pt;
+    font-size: 22pt;
 }
 
 
@@ -133,6 +139,20 @@ h2.ContentHeader {
 
 
 /* HOME */
+
+.homeContentSection {
+    border-left: 2px solid rgb(155, 155, 155);
+    margin-bottom: 22px;
+    padding-left: 12px;
+    padding-top: 0px;
+    padding-bottom: 6px;
+    margin-left: 10px;
+}
+
+.homeContentDiplay {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /* ABOUT */

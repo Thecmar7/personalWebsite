@@ -28,11 +28,10 @@ class Display
 			</p>
 
 			<div id="header_social">
-				<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=<?=$config["paths"]["images"]["layout"]."/linkedin_pixel.png"?> alt="LinkedIn"></a>
-				<a class='socialLink' href=<?=$config['urls']['github']?>><img src=<?=$config["paths"]["images"]["layout"]."/github_pixel.png"?> alt="GitHub"></a>
-				<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=<?=$config["paths"]["images"]["layout"]."/twitter_pixel.png"?> alt="Twitter"></a>
+				<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Icon_Twitter.svg/512px-Icon_Twitter.svg.png alt="LinkedIn"></a>
+				<a class='socialLink' href=<?=$config['urls']['github']?>><img src="https://cmar.tech/images/layout/GitHub-Mark-120px-plus.png"></a>
+				<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=https://upload.wikimedia.org/wikipedia/commons/6/6d/LinkedinBlack.png alt="Twitter"></a>
 			</div>
-			
 
 			<div id=navButtonsContainer>
 				<nav>
