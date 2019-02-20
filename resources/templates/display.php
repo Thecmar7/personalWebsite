@@ -36,7 +36,7 @@ class Display
 
 			<div id=navButtonsContainer>
 				<nav>
-					<button class='navigationButton' value=<?=$config['home']?>>Home</button>
+					<button id=homeButton class='navigationButton' value=<?=$config['home']?>>Home</button>
 					<button class='navigationButton' value=<?=$config['bio']?>>About</button>
 					<button class='navigationButton' value=<?=$config['projects']?>>Projects</button>
 					<button class='navigationButton' value=<?=$config['resumePage']?>>Resume</button>

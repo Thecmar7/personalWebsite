@@ -1,6 +1,6 @@
 <?php 
 
-	include("../../resources/config.php");
+	include_once("../../resources/config.php");
 	$filePath = $config['resume'];
 	$fileServerPath = $config['resumeRootPath'];
 ?>

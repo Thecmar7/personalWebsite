@@ -1,5 +1,5 @@
 <?php
-	include("../../resources/config.php");
+	include_once("../../resources/config.php");
 ?>
 
 <h2 class="ContentHeader"> About Me </h2>
