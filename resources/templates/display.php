@@ -154,34 +154,30 @@ class Display
 		?>
 			<div id=mainFooter>
 				<div>
-					<table>
+					<table id=contactTable>
 						<tbody>
 							<tr> 
-								<td> Email: </td>
-								<td> Twitter: </td>
+								<td class="col1"> <h4>Email:</h4> </td>
+								<td> cramer.s.smith [at] gmail.com </td>
 							</tr>
 							<tr>
-								<td> cramer.s.smith [at] gmail.com </td>
+								<td class="col1"> <h4>Twitter:</h4> </td>	
 								<td> @TheCmar7 </td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 
-				<div>
-					<h3>APIs used</h3>
-					<table>
-						<tbody>
-							<tr>
-								<td><a href="https://highlightjs.org">highlighter.js</a></td>
-								<td><a href="https://www.google.com/analytics/">google analytics</a></td>
-								<td><a href="https://jquery.com/" >jQuery</a> </td>
-							</tr>
-						</tbody>
-					</table>
+				<div id=apiList>
+					<h3 id=footerAPISubheader>APIs Used:</h3>
+					<nav id=footerAPILinks>
+						<a class=footerAPILink href="https://highlightjs.org">highlighter.js</a>
+						<a class=footerAPILink href="https://www.google.com/analytics/">google analytics</a>
+						<a class=footerAPILink href="https://jquery.com/">jQuery</a>
+					</nav>
 				</div>
 
-				<div>
+				<div id=modifiedDateDisplay>
 					Site Last Modified: <span class=infoDate> <?=date ("F d Y H:i:s.", filemtime($filename))?> </span>
 				</div>
 			</div>			
