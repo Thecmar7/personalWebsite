@@ -1,0 +1,143 @@
+/* 
+home.css 
+
+This is the home.css this page is specifically for the 'Home.php' file in public_html
+
+*/
+
+
+/*
+.pro_pic {
+	width: 270px;
+	height: 270px;
+	float: right;
+	margin: 10px;
+	border-radius: 20px;
+}
+
+/* middle */
+
+.home_content_main {
+    display: inline-block;
+}
+
+#comic>img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.home_sub {
+    width: 90%;
+}
+
+.home_content_h3 {
+    font-size: 12pt;
+    font-weight: normal;
+    font-family: "Arial Black";
+}
+
+.home_title_anchor {
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Courier New;
+}
+
+
+/* 
+.mid_right {
+    width: 60%;
+    padding-top: 1px;
+}
+
+.side_bar {
+    display: block;
+    width: 37%;
+    float: right;
+}
+
+.side_bar img {
+    margin-top: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.internet_thing h3 {
+    font-size: 12pt;
+    font-weight: normal;
+    font-family: "Arial Black";
+}
+
+.internet_thing>h3>a {
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Courier New;
+} */
+
+
+/*
+
+.mid > div > h2 {
+	font-family: "Palatino Linotype"; 
+}
+
+#blog, #resume, #social {
+	float: left;
+	width: 150px;
+	text-align: center;	
+	padding: 7px;
+}
+
+#blog > a, #resume > a, #social > a, #web_dev > a {
+	font-size: 15pt;
+}
+
+#CommonSites > td {
+  text-align: center;
+}
+
+#CommonSites > a {
+  background-color: #ccf5ff;
+}
+
+#CommonSites > a:hover {
+   background-color: #ccffff;
+   color: white;
+}
+
+#social > a {
+	text-align: center;
+}
+
+#social > a > img {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 2px;
+}
+
+#contact_info {
+	width: 320px;
+}
+
+#web_dev {
+	padding-top: 30px;
+	clear: left;
+	clear: right;
+	padding-bottom: 10px;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+
+#comic {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#starwars_nerd > h2 {
+	font-size: 12pt;
+}

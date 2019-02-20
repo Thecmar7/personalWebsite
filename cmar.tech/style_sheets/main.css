@@ -1,0 +1,23 @@
+/* CSS that will be applied to every page.*/
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    /* background-color: #D9F1F1; */
+    width: 1055px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 40px;
+}
+
+#mainContent {
+    min-height: 500px;
+}
+
+div {
+    border: 1px black solid;
+}
+
+h2.ContentHeader {
+    font-weight: bold;
+    font-size: 15pt;
+}
