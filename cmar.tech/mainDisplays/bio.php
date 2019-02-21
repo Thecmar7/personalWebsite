@@ -14,10 +14,11 @@
 						Grew up in a small town in Washington and from there
 						went to study computer science at the University of
 						Washington. After two years of not being able to reach
-						the incredibly high standards of UW I that 
-						my hard work will carry me further than pure talent.
+						the incredibly high standards of UW, I realized that 
+						my hard work will carry me further than talent.
 						I transferred to Oregon State University, and in April of 
-						2018 I graduated with a degree in applied computer science.
+						2018 I graduated with a degree in applied computer science
+						with a focus in security.
 					</p>
 				</td>
 			</tr>

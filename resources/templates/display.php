@@ -28,9 +28,9 @@ class Display
 			</p>
 
 			<div id="header_social">
-				<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Icon_Twitter.svg/512px-Icon_Twitter.svg.png alt="LinkedIn"></a>
-				<a class='socialLink' href=<?=$config['urls']['github']?>><img src="https://cmar.tech/images/layout/GitHub-Mark-120px-plus.png"></a>
-				<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=https://upload.wikimedia.org/wikipedia/commons/6/6d/LinkedinBlack.png alt="Twitter"></a>
+				<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=https://cmar.tech/images/layout/linkedinRecroppedLogo-5292ff.png alt="LinkedIn"></a>
+				<a class='socialLink' href=<?=$config['urls']['github']?>><img src="https://cmar.tech/images/layout/GitHub-Mark-120px-plus-5292ff.png"></a>
+				<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=https://cmar.tech/images/layout/twitter-5292ff.png alt="Twitter"></a>
 			</div>
 
 			<div id=navButtonsContainer>
@@ -39,7 +39,7 @@ class Display
 					<button class='navigationButton' value=<?=$config['bio']?>>About</button>
 					<button class='navigationButton' value=<?=$config['projects']?>>Projects</button>
 					<button class='navigationButton' value=<?=$config['resumePage']?>>Resume</button>
-					<button class='navigationButton' value=<?=$config['blog']?>>Blog</button>
+					<!-- <button class='navigationButton' value=//$config['blog']>Blog</button> -->
 				</nav>
 			</div>
 		</div>
@@ -150,8 +150,15 @@ class Display
 	 */
 	public function footer(string $filename) 
 	{
+		global $config;
+
 		?>
 			<div id=mainFooter>
+				<div id="header_social">
+					<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=https://cmar.tech/images/layout/linkedinRecroppedLogo-5292ff.png alt="LinkedIn"></a>
+					<a class='socialLink' href=<?=$config['urls']['github']?>><img src="https://cmar.tech/images/layout/GitHub-Mark-120px-plus-5292ff.png"></a>
+					<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=https://cmar.tech/images/layout/twitter-5292ff.png alt="Twitter"></a>
+				</div>
 				<div>
 					<table id=contactTable>
 						<tbody>
@@ -159,16 +166,16 @@ class Display
 								<td class="col1"> <h4>Email:</h4> </td>
 								<td> cramer.s.smith [at] gmail.com </td>
 							</tr>
-							<tr>
-								<td class="col1"> <h4>Twitter:</h4> </td>	
-								<td> @TheCmar7 </td>
-							</tr>
+							<!-- <tr>
+								<td class="col1"> <h4>Phone:</h4> </td>	
+								<td> 2 x 1801020163 </td>
+							</tr> -->
 						</tbody>
 					</table>
 				</div>
 
 				<div id=apiList>
-					<h3 id=footerAPISubheader>APIs Used:</h3>
+					<h4 id=footerAPISubheader>Tools Used:</h4>
 					<nav id=footerAPILinks>
 						<a class=footerAPILink href="https://highlightjs.org">highlighter.js</a>
 						<a class=footerAPILink href="https://www.google.com/analytics/">google analytics</a>
@@ -176,6 +183,7 @@ class Display
 					</nav>
 				</div>
 
+				
 				<div id=modifiedDateDisplay>
 					Site Last Modified: <span class=infoDate> <?=date ("F d Y H:i:s.", filemtime($filename))?> </span>
 				</div>
