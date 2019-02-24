@@ -50,6 +50,10 @@ h3 {
     color: var(--accent-light)
 }
 
+.clear {
+    clear: both;
+}
+
 
 /* CSS DEBUGGING */
 
@@ -68,6 +72,25 @@ h3 {
     background-position: right;
 }
 
+#headerImageContainer {
+    height: 190px;
+    width: 190px;
+    float: left;
+}
+
+#headerMainImage {
+    width: 190px;
+    height: 190px;
+    border-radius: 95px;
+    object-fit: cover;
+}
+
+#headerTextContainer {
+    float: left;
+    margin: 5px 0px 0px 6px;
+    width: 79%;
+}
+
 #headerTitle {
     font-size: 32pt;
     border-bottom: 1px solid var(--accent-light);
@@ -79,7 +102,7 @@ h3 {
 }
 
 #header_social {
-    width: 150px;
+    width: 134px;
     float: right;
 }
 
@@ -209,6 +232,10 @@ h2.ContentHeader {
 
 #sketchDailyHeader,
 #sketchDailyLinkHeader>h3 {
+    display: inline;
+}
+
+#XKCD>div>h4 {
     display: inline;
 }
 
