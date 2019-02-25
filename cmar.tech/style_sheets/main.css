@@ -11,8 +11,11 @@
 */
 
 :root {
+    --accent-lighter: #fdce75;
     --accent-light: #ffa700;
     --accent-dark: #ff8100;
+    --main-lighterer: #c7ddfc;
+    --main-lighter: #a7cbfd;
     --main-light: #91bfff;
     --main-dark: #5292ff;
 }
@@ -26,22 +29,50 @@ body {
     padding-bottom: 40px;
 }
 
-a {
+
+/* a {
     font-family: 'Lato', sans-serif;
     color: var(--main-dark);
     font-weight: lighter;
+} */
+
+a {
+    color: var(--main-dark);
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+    padding-right: 1px;
+    padding-left: 1px;
+    /* padding: 1px; */
+    background: linear-gradient( to bottom, var(--main-lighter) 0%, var(--main-lighter) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 4px;
+    text-decoration: none;
+    transition: background-size .4s;
+    border-radius: 4px;
+}
+
+a:hover {
+    border-radius: 4px;
+    background-size: 4px 50px;
+}
+
+a:active {
+    color: white;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h3>a {
     font-family: "Courier New", Courier, monospace;
     font-weight: 100;
 }
 
 h3 {
+    margin-top: 3px;
     font-size: 18pt;
 }
 
@@ -66,10 +97,12 @@ h3 {
 /* HEADER STYLE */
 
 #mainHeader {
-    padding: 4px;
-    /* background-image: url("../images/layout/header_background.png"); */
-    background-repeat: no-repeat;
+    /* padding: 4px; */
+    /* background-image: url(../images/layout/header_background.png); */
+    /* background-repeat: no-repeat;
     background-position: right;
+    /* background: #b0cffa; */
+    /* border-radius: 125px; */
 }
 
 #headerImageContainer {
@@ -79,37 +112,52 @@ h3 {
 }
 
 #headerMainImage {
-    width: 190px;
-    height: 190px;
-    border-radius: 95px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
     object-fit: cover;
 }
 
 #headerTextContainer {
     float: left;
-    margin: 5px 0px 0px 6px;
+    /* margin: 5px 0px 0px 6px; */
     width: 79%;
+    height: 250px;
+    /* margin-left: 40px; */
 }
 
 #headerTitle {
     font-size: 32pt;
+    padding-left: 50px;
     border-bottom: 1px solid var(--accent-light);
 }
 
 #headerDescription {
     width: 70%;
     display: inline;
+    padding-left: 70px;
 }
 
-#header_social {
+.header_social {
     width: 134px;
     float: right;
+}
+
+.socialLink,
+.socialLink:hover {
+    /* color: var(--main-dark); */
+    background: none;
 }
 
 .socialLink>img {
     height: 40px;
     width: 40px;
     border-radius: 20px;
+    transition: background .2s;
+}
+
+.socialLink>img:hover {
+    background: var(--main-lighterer);
 }
 
 #navButtonsContainer {
@@ -117,6 +165,7 @@ h3 {
     margin-right: auto;
     margin-left: auto;
     margin-top: 15px;
+    padding-left: 64px;
 }
 
 .navigationButton {
@@ -129,6 +178,10 @@ h3 {
     font-size: 13pt;
     border-radius: 6px;
     margin-right: 13px;
+    /* fun transition stuff */
+    -webkit-transition: color .3s, background-color .3s, border .3s, border-radius .3s;
+    /* For Safari 3.1 to 6.0 */
+    transition: color .3s, background-color .3s, border .3s, border-radius .3s;
 }
 
 .navigationButton:hover {
@@ -173,7 +226,6 @@ h2.ContentHeader {
     padding: 4px;
     padding-top: 15px;
     border-top: 1px solid var(--accent-light);
-    ;
 }
 
 #footerAPISubheader {
@@ -188,7 +240,9 @@ h2.ContentHeader {
     padding: 5px;
 }
 
-.footerAPILink {
+.footerAPILink,
+.footerAPI:hover {
+    border-radius: 0px;
     padding-right: 6px;
     padding-left: 6px;
     height: 22px;
@@ -215,12 +269,27 @@ h2.ContentHeader {
 /* HOME */
 
 .homeContentSection {
+    border: 2px solid white;
     border-left: 2px solid var(--accent-dark);
     margin-bottom: 22px;
     padding-left: 12px;
-    padding-top: 0px;
+    /* padding-top: 0px; */
     padding-bottom: 6px;
     margin-left: 10px;
+    /* fun transition stuff */
+    /* padding-top: 2px;
+    padding-bottom: 8px; */
+    -webkit-transition: background-color .7s, border .7s, border-radius .7s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color .7s, border .7s, border-radius .7s;
+}
+
+.homeContentSection:hover {
+    /* padding-top: 0px;
+    padding-bottom: 6px; */
+    background-color: white;
+    border: 2px solid var(--accent-dark);
+    border-radius: 12px;
 }
 
 .homeContentDiplay {
@@ -259,6 +328,10 @@ h2.ContentHeader {
 
 #aboutMeTable>tbody>tr>.col2 {
     width: 600px;
+}
+
+#aboutMeTable>tbody>tr>td>p {
+    margin-top: 0px;
 }
 
 #aboutMeTable>tbody>tr>.col3 {
@@ -305,6 +378,11 @@ h2.ContentHeader {
 .projectLink {
     font-size: 16px;
     font-family: "Courier New", Courier, monospace;
+}
+
+#projectTable {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #projectTable>tbody>tr>td {

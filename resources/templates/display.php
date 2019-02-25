@@ -30,7 +30,7 @@ class Display
 					<?=$description?>
 				</p>
 
-				<div id="header_social">
+				<div class="header_social">
 					<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=https://cmar.tech/images/layout/linkedinRecroppedLogo-5292ff.png alt="LinkedIn"></a>
 					<a class='socialLink' href=<?=$config['urls']['github']?>><img src="https://cmar.tech/images/layout/GitHub-Mark-120px-plus-5292ff.png"></a>
 					<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=https://cmar.tech/images/layout/twitter-5292ff.png alt="Twitter"></a>
@@ -160,7 +160,7 @@ class Display
 
 		?>
 			<div id=mainFooter>
-				<div id="header_social">
+				<div class="header_social">
 					<a class='socialLink' href=<?=$config['urls']['linkedin']?>> <img src=https://cmar.tech/images/layout/linkedinRecroppedLogo-5292ff.png alt="LinkedIn"></a>
 					<a class='socialLink' href=<?=$config['urls']['github']?>><img src="https://cmar.tech/images/layout/GitHub-Mark-120px-plus-5292ff.png"></a>
 					<a class='socialLink' href=<?=$config['urls']['twitter']?>><img src=https://cmar.tech/images/layout/twitter-5292ff.png alt="Twitter"></a>

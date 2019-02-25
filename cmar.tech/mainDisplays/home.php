@@ -61,9 +61,10 @@
 
 <h2 class="ContentHeader">Home</h2>
 
-<div id=mainContentContainer>
 	<div id=hackerNews class=homeContentSection>
-		 <a href='https://news.ycombinator.com/'><h3>Hacker News</h3></a>   
+		<h3>
+			<a href='https://news.ycombinator.com/'>Hacker News</a>   
+		</h3>
 		<p>The current top 5 articles</p>
 		<div id=hackerNewsDisplay class="homeContentDiplay">
 			<?=$hackerNewsTop?>
@@ -71,9 +72,11 @@
 	</div>
 
 	<div id=XKCDContainer class=homeContentSection>
-		 <a href='http://xkcd.com'><h3>XKCD</h3></a> 
-		<p> Randal Monroe is one of my heros</p>
+		<h3>
+			<a href='http://xkcd.com'>XKCD</a> 
+		</h3>
 		<div id=XKCD class="homeContentDiplay">
+			<p> Randal Monroe is one of my heros</p>
 			<div>
 				<span><?=$currentXKCD->safe_title?>: <span class="infoDate"><?=$currentXKCD->month."/".$currentXKCD->day."/".$currentXKCD->year?></span></span>
 				<img src=<?=$currentXKCD->img?> alt='<?echo($currentXKCD->alt)?>'/>
@@ -83,7 +86,9 @@
 	</div>
 
 	<div id=dailyProgrammerContainter class=homeContentSection>
-		<a href="https://www.reddit.com/r/dailyprogrammer"><h3> Daily Programmer Challenge</h3> </a>
+		<h3>
+			<a href="https://www.reddit.com/r/dailyprogrammer">Daily Programmer Challenge</a>
+		</h3>
 		<div id=dailyProgrammer class="homeContentDiplay">
 			<span><?=$todaysChallendeLink?></span>
 		</div>
