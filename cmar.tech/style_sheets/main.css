@@ -443,6 +443,38 @@ h2.ContentHeader {
 }
 
 
+/* BLOG */
+
+.article {
+    border: 2px solid white;
+    border-left: 2px solid var(--accent-dark);
+    border-top: 2px solid var(--accent-dark);
+    margin-bottom: 22px;
+    padding: 12px;
+    /* padding-top: 0px; */
+    padding-bottom: 6px;
+    margin-left: 10px;
+    /* fun transition stuff */
+    /* padding-top: 2px;
+    padding-bottom: 8px; */
+    -webkit-transition: background-color .7s, border .7s, border-radius .7s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color .7s, border .7s, border-radius .7s;
+}
+
+.article:hover {
+    /* padding-top: 0px;
+    padding-bottom: 6px; */
+    background-color: white;
+    border: 2px solid var(--accent-dark);
+    border-radius: 12px;
+}
+
+.post_meat {
+    padding: 12px;
+}
+
+
 /* loaging circle */
 
 #wrapper {

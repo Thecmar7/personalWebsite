@@ -16,6 +16,13 @@ function ajaxLoadContent(contentId, link) {
             url: link,
         }).done(function(data) {
             $(contentId).html(data);
+            if (link.substring(link.length - 8, link.length - 4) === 'blog') {
+
+                document.querySelectorAll('pre code').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+
+            }
         });
     }
 }

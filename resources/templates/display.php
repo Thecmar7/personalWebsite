@@ -3,6 +3,42 @@
 
 class Display 
 {
+
+	/**
+	 * siteHeader
+	 * 
+	 * builds the site header for for all the pages
+	 *
+	 * @param string $title
+	 *
+	 * @return void
+	 */
+	private function htmlHeader(string $title) {
+		global $config;
+		?>
+		<!DOCTYPE html>
+		<html>
+
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				<title><?=$title?></title>
+				<link type="text/css" rel="stylesheet" href="<?=$config['paths']['stylesheets']."/main.css"?>"/>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.2.3/dist/sweetalert2.all.min.js"></script>
+				<script src="<?=$config['paths']['javascript']."/home.js"?>"></script>
+
+				<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.5/styles/default.min.css">
+				<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.5/highlight.min.js"></script>
+				<script>
+					hljs.initHighlightingOnLoad();
+					hljs.configure({tabReplace: '  '});
+				</script>
+			</head>
+
+			<body>
+		<?php
+	}
+
 	/**
 	 * mainHeader
 	 *
@@ -42,7 +78,7 @@ class Display
 						<button class='navigationButton' value=<?=$config['bio']?>>About Me</button>
 						<button class='navigationButton' value=<?=$config['projects']?>>Projects</button>
 						<button class='navigationButton' value=<?=$config['resumePage']?>>Resume</button>
-						<!-- <button class='navigationButton' value=//$config['blog']>Blog</button> -->
+						<button class='navigationButton' value=<?=$config['blog']?>>Blog</button>
 					</nav>
 				</div>
 			</div>
@@ -53,33 +89,7 @@ class Display
 	
 
 
-	/**
-	 * siteHeader
-	 * 
-	 * builds the site header for for all the pages
-	 *
-	 * @param string $title
-	 *
-	 * @return void
-	 */
-	private function htmlHeader(string $title) {
-		global $config;
-		?>
-		<!DOCTYPE html>
-		<html>
 
-			<head>
-				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-				<title><?=$title?></title>
-				<link type="text/css" rel="stylesheet" href="<?=$config['paths']['stylesheets']."/main.css"?>"/>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-				<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.2.3/dist/sweetalert2.all.min.js"></script>
-				<script src="<?=$config['paths']['javascript']."/home.js"?>"></script>
-			</head>
-
-			<body>
-		<?php
-	}
 
 	/**
 	 * mainView
